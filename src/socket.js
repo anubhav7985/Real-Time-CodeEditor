@@ -1,7 +1,7 @@
 import { io } from 'socket.io-client';
 const env = import.meta.env
 const node_env = env.NODE_ENV || 'development';
-const backendUrl = node_env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
+const backendUrl = node_env.REACT_APP_BACKEND_URL;
 
 export const initSocket = async () => {
     const options = {
