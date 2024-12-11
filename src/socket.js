@@ -1,9 +1,11 @@
 import { io } from 'socket.io-client';
 const env = import.meta.env
 const node_env = env.NODE_ENV || 'development';
-const backendUrl = 'https://real-time-code-editor-ej6i.vercel.app/'
+const backendUrl = 'http://localhost:5000'
 
 export const initSocket = async () => {
+    console.log(backendUrl);
+    
     const options = {
         'force new connection': true,
         reconnectionAttempt: 'Infinity',
