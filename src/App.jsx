@@ -22,8 +22,11 @@ function App() {
       </div>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element= {<Home />}/>
-          <Route 
+          <Route
+            path='/'
+            element={<Home />}
+          />
+          <Route
             path='/editor/:roomId'
             element={<EditorPage />}
           ></Route>

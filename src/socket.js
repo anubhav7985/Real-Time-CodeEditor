@@ -1,7 +1,7 @@
 import { io } from 'socket.io-client';
 const env = import.meta.env
 const node_env = env.NODE_ENV || 'development';
-const backendUrl = node_env.REACT_APP_BACKEND_URL;
+const backendUrl = node_env.REACT_APP_BACKEND_URL || 'https://real-time-code-editor-ej6i.vercel.app/'
 
 export const initSocket = async () => {
     const options = {
